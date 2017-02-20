@@ -1,0 +1,42 @@
+\documentclass[10pt,handout,twocolumn,twoside,wordchoicegiven]{xourse}
+
+
+\input{preamble.tex}
+
+%% \iftikzexport
+%% \newcommand\chapterstyle{}
+%% \newcommand\sectionstyle{}
+%% \else
+%% \usepackage{lulu1}
+%% \fi
+%\usepackage{lulu1}
+
+\title{This is NOT Calculus 1}
+
+\begin{document}
+\maketitle
+
+\setcounter{tocdepth}{2}
+
+\part{Hilary's new book}
+
+%% Understanding Functions
+%\chapterstyle
+\activity{hilary.tex}
+\activity{hilary2.tex}
+\activity{hilary3.tex}
+
+\chapterstyle
+\activity{optimization/titlePage.tex}
+\sectionstyle
+\activity{optimization/breakGround.tex}
+\activity{optimization/digInOptimization.tex}
+
+\chapterstyle
+\activity{definiteIntegral/breakGround.tex}
+\activity{definiteIntegral/digInTheDefiniteIntegral.tex}
+
+\iftikzexport\else\printindex\fi
+
+\end{document}
+
