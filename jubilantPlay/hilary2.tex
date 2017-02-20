@@ -24,15 +24,11 @@ I will put some more problems here and ask for answers.
         every axis x label/.style={at=(current axis.right of origin),anchor=west},
         axis on top,
     ] 
-      \addplot [draw=none, %pattern=north west lines, pattern color=blue,
-        fill=fillp,
+      \addplot [draw=none, %pattern=north west lines, pattern color=blue, fill=fillp,
         domain=0:1] {x} \closedcycle;
-      \addplot [draw=none, %pattern=north west lines, pattern color=blue,
-        fill=fillp,
+      \addplot [draw=none, %pattern=north west lines, pattern color=blue, fill=fillp,
         domain=1:5] {1.5-x/2} \closedcycle;
-      
-      \addplot [penColor,very thick,domain=0:1] {x};
-      \addplot [penColor,very thick,domain=1:5] {1.5-x/2};
+
   \end{axis}
   \end{tikzpicture}
 \end{image}
