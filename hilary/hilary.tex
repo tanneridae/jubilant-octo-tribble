@@ -1,28 +1,30 @@
 \documentclass[handout]{ximera}
 
-\title{Working Ximera Images}
+\title{Working Ximera Exercises}
 \author{Hilary Freeman}
 
 
 
 \begin{document}
 \begin{abstract}
-  This is my tikz image that works.  This is supposed to display a pair of axes.
+  The question seems to work here with no error messages, but when I call this file in mycourse.tex, I get compile errors about the wordChoice syntax.
 \end{abstract}
 \maketitle
 
-Trying changes on the day after pi day. 
 
-\begin{tikzpicture}
-\draw [thick, <->] (0,2) -- (0,0) -- (2,0);
-\end{tikzpicture}
 
-\begin{verbatim}
+%%PROBLEM 4
+\begin{exercise}
+The function $f(x) =x+\cos(x)$ has one critical point on the interval $[0,\pi]$. Call this critical point $a$.
 
-\begin{tikzpicture}
-\draw [thick, <->] (0,2) -- (0,0) -- (2,0);
-\end{tikzpicture}
+$$
+a = \answer{\pi/2}
+$$
 
-\end{verbatim}
+On $[0,a)$, $f$ is \wordChoice{\choice[correct]{increasing} \choice{decreasing} }
+
+
+
+\end{exercise}
 
 \end{document}
